@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import 230Info from "../views/230Info.vue";
+import SectionInfo from "../views/SectionInfo.vue";
 
 Vue.use(VueRouter);
 
@@ -19,6 +19,12 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
+  },
+  {
+    path: "/sectionInfo",
+    name: "SectionInfo",
+    component: () =>
+      import("../views/SectionInfo.vue")
   }
 ];
 
