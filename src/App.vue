@@ -8,9 +8,7 @@
   </v-app>
 </template>
 
-<style>
 
-</style>
 <script>
 import LandingPage from "./components/LandingPage"
 
