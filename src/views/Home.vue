@@ -17,7 +17,7 @@
 
 <script>
 
-import NavButton from "./NavButton"
+import NavButton from "../Components/NavButton"
 export default {
   name: "Home",
 

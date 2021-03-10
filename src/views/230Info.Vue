@@ -1,11 +1,17 @@
 <template>
- <title>https://www.eff.org/issues/cda230</title> 
+    <div>
+   
+    </div>
+  
 </template>
 
 <script>
-export default{
-    name: '230Info',
-    
-};
 
+import NavButton from "../Components/NavButton"
+export default {
+  name: "230Info"
+
+  
+
+};
 </script>
