@@ -6,18 +6,18 @@
         <v-spacer></v-spacer>
     </v-toolbar>
 
-    <NavButton title="Section 230 Information"></NavButton>
+    <NavButton title="Section 230 Information" v-bind:route="SectionInfo"></NavButton>
     <v-spacer></v-spacer>
-    <NavButton title="Federal Legislation Tracker"></NavButton>
+    <NavButton title="Federal Legislation Tracker" v-bind:route="B"></NavButton>
     <v-sapcer></v-sapcer>
-    <NavButton title="State Legislation Tracker"></NavButton>
+    <NavButton title="State Legislation Tracker" v-bind:route="C"></NavButton>
     </div>
   
 </template>
 
 <script>
 
-import NavButton from "../Components/NavButton"
+import NavButton from "..\components\NavButton.vue"
 export default {
   name: "Home",
 

@@ -1,7 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import SectionInfo from "../views/SectionInfo.vue";
 
 Vue.use(VueRouter);
 
@@ -24,8 +23,8 @@ const routes = [
     path: "/sectionInfo",
     name: "SectionInfo",
     component: () =>
-      import("../views/SectionInfo.vue")
-  }
+      import(/* webpackChunkName: "SectionInfo" */ "../views/SectionInfo.vue")
+  },
 ];
 
 const router = new VueRouter({

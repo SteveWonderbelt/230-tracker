@@ -3,20 +3,20 @@
     
 
     <v-main>
-      <LandingPage />
+      <Home />
     </v-main>
   </v-app>
 </template>
 
 
 <script>
-import LandingPage from "./components/LandingPage"
+import Home from 'views/Home.vue';
 
 export default {
   name: "App",
 
   components: {
-    LandingPage
+    Home
   },
 
   data: () => ({

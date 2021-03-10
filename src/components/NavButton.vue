@@ -6,14 +6,10 @@
 
 <script>
 export default{
-    name: 'NavButton',
+    name: "NavButton",
     props:{
-        title:{
-            type: String,
-        },
-        route:{
-            type: String,
-        }
+        title: String,
+        route: String,
     }
 };
 </script>
