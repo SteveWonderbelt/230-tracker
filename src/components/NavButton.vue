@@ -11,6 +11,9 @@ export default{
         title:{
             type: String,
         },
+        route:{
+            type: String,
+        }
     }
 };
 </script>
