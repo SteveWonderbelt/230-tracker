@@ -6,22 +6,25 @@
       <v-spacer></v-spacer>
     </v-toolbar>
 
-    <NavButton title="Section 230 Information" route="SectionInfo"></NavButton>
-    <v-spacer></v-spacer>
-    <NavButton title="Federal Legislation Tracker" route="B"></NavButton>
-    <v-sapcer></v-sapcer>
-    <NavButton title="State Legislation Tracker" route="C"></NavButton>
+    <router-link tag="button" :to="{ name: 'SectionInfo' }"
+      >Section 230 Info</router-link
+    >
+
+    <router-link :to="{ name: 'FedLeg' }"
+      >Federal Legislation Tracker</router-link
+    >
+
+    <router-link :to="{ name: 'StateLeg' }"
+      >State Legislation Tracker</router-link
+    >
   </div>
 </template>
 
 <script>
-import NavButton from "../components/NavButton.vue";
 export default {
   name: "Home",
 
   data: () => ({}),
-  components: {
-    NavButton
-  }
+  components: {}
 };
 </script>
