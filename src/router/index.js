@@ -33,6 +33,26 @@ const routes = [
     path: "/fedLeg",
     name: "FedLeg",
     component: FedLeg
+  },
+  {
+    path: "/services",
+    name: "Services",
+    component: About
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: About
+  },
+  {
+    path: "/contact",
+    name: "Contact Us",
+    component: About
+  },
+  {
+    path: "/team",
+    name: "Team",
+    component: About
   }
 ];
 

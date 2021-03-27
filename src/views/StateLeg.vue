@@ -8,6 +8,7 @@
 
 <script>
 export default {
-  name: "StateLeg"
+  name: "StateLeg",
+  components: {}
 };
 </script>

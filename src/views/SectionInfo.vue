@@ -8,13 +8,14 @@
       codified as Section 230 of the Communications Act of 1934 at 47 U.S.C. §
       230
     </p>
-
-    <router-link :to="{ name: 'Home' }">Return to home page</router-link>
+    <Data></Data>
   </div>
 </template>
 
 <script>
+import Data from "../components/Data.vue";
 export default {
-  name: "SectionInfo"
+  name: "SectionInfo",
+  components: { Data }
 };
 </script>

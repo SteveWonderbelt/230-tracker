@@ -1,20 +1,15 @@
 <template>
   <div>
-    <v-toolbar dark prominent src="..\assets\analytics-3088958_1920.jpg">
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-      <v-toolbar-title>Section 230 Tracker</v-toolbar-title>
-      <v-spacer></v-spacer>
-    </v-toolbar>
-    <div>
-      <router-link :to="{ name: 'SectionInfo' }" tag="button" id="buttons"
+    <div id="buttonHolder">
+      <router-link :to="{ name: 'SectionInfo' }" tag="button" class="buttons"
         >Section 230 Info</router-link
       >
 
-      <router-link :to="{ name: 'FedLeg' }" tag="button" id="buttons"
+      <router-link :to="{ name: 'FedLeg' }" tag="button" class="buttons"
         >Federal Legislation Tracker</router-link
       >
 
-      <router-link :to="{ name: 'StateLeg' }" tag="button" id="buttons"
+      <router-link :to="{ name: 'StateLeg' }" tag="button" class="buttons"
         >State Legislation Tracker</router-link
       >
     </div>
@@ -26,12 +21,32 @@ export default {
   name: "Home",
 
   data: () => ({}),
-  components: {},
+  components: {}
 };
 </script>
 <style scoped>
-#buttons{
-  background-color: blue;
-  margin: 10px;
+.buttons {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #1216f3f6;
+  border: 0;
+  border-bottom: 2px solid #0c3fe8;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #0c64e8;
+  box-shadow: inset 0 -2px #0c34e8;
+  margin: 1em;
+}
+.buttons:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 </style>
